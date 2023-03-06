@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "./button";
 import { Container } from "./container";
 import { HamburgerIcon } from "./icons/hamburger";
 import { Logo } from "./icons/logo";
@@ -31,9 +30,12 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height justify-between">
-        <Link className="flex items-center text-md" href="/">
+        <button
+          className="flex items-center text-md"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Compila
-        </Link>
+        </button>
 
         <div
           className={classNames(
@@ -51,28 +53,22 @@ export const Header = () => {
           >
             <ul
               className={classNames(
-                "flex h-full flex-col md:flex-row md:items-center [&_li]:ml-6 [&_li]:border-b [&_li]:border-grey-dark md:[&_li]:border-none",
+                "flex h-full flex-col md:flex-row md:items-center [&_li]:ml-6",
                 "ease-in [&_a:hover]:text-grey [&_a]:flex [&_a]:h-navigation-height [&_a]:w-full [&_a]:translate-y-8 [&_a]:items-center [&_a]:text-lg [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm [&_a]:md:transition-colors",
                 hamburgerMenuIsOpen && "[&_a]:translate-y-0"
               )}
             >
               <li>
-                <Link href="#">Inicio</Link>
+                <a href="/#clients">Inicio</a>
               </li>
               <li>
-                <Link href="#">Servicios</Link>
+                <a href="/#services">Servicios</a>
               </li>
               <li className="md:hidden lg:block">
-                <Link href="#">Proyectos</Link>
+                <a href="/#projects">Proyectos</a>
               </li>
               <li className="md:hidden lg:block">
-                <Link href="#">Equipo</Link>
-              </li>
-              <li>
-                <Link href="#">FAQs</Link>
-              </li>
-              <li>
-                <Link href="#">Contacto</Link>
+                <a href="#team">Equipo</a>
               </li>
             </ul>
           </nav>

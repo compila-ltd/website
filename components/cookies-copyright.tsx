@@ -6,7 +6,7 @@ import { Button } from "./button";
 
 const cookieBannerName = "copyright-banner-dismissed";
 
-export const CopyrightLinearBanner = () => {
+export const CookiesCopyright = () => {
   const [isCookieBannerVisible, setIsCookieBannerVisible] = useState(false);
 
   useEffect(() => {
@@ -27,14 +27,14 @@ export const CopyrightLinearBanner = () => {
     <div className="fixed right-[4rem] bottom-[4rem] flex w-[65rem] max-w-[95%] items-start rounded-md border border-transparent-white p-8 text-[2rem] backdrop-blur-[12px]">
       <div className="space-y-3">
         <p>
-          <strong>⚠️ NOTE:</strong> I am not affiliated with Linear in any way.
-          All images, the name of Linear and their logo are copyrighted by
-          Linear. This website is only intended for educational purposes and as
-          a homage to Linear's great UI work 🙏
+          <strong>⚠️ Lo de las cookies:</strong> <br /> Lorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Voluptas fugiat totam ut expedita
+          magni minima delectus nihil blanditiis maiores, ad laboriosam amet,
+          quas iusto autem qui aperiam! Maxime, quo aliquid!
         </p>
         <p>
-          <Button href="https://linear.app" size="large" target="_blank">
-            Visit Linear's website
+          <Button onClick={dismissCookie} size="large">
+            Aceptar
           </Button>
         </p>
       </div>

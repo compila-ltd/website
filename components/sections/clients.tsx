@@ -1,3 +1,4 @@
+import { Features } from "../features";
 import { AlanLogo } from "../logos/alan";
 import { ArcLogo } from "../logos/arc";
 import { CashAppLogo } from "../logos/cashapp";
@@ -12,7 +13,7 @@ import { RetoolLogo } from "../logos/retool";
 import { VercelLogo } from "../logos/vercel";
 
 export const Clients = () => (
-  <>
+  <section id="clients">
     <p className="mb-12 text-center text-lg text-white md:text-xl">
       <span className="text-primary-text">
         Empresas que confían en nuestros servicios.
@@ -26,12 +27,12 @@ export const Clients = () => (
       <DescriptLogo className="hidden md:block" />
       <CashAppLogo />
       <RaycastLogo />
-      {/* <MercuryLogo />
+      <MercuryLogo />
       <RetoolLogo />
       <AlanLogo className="hidden md:block" />
       <ArcLogo className="hidden md:block" />
       <OpenSeaLogo className="hidden md:block" />
-      <PitchLogo className="hidden md:block" /> */}
+      <PitchLogo className="hidden md:block" />
     </div>
-  </>
+  </section>
 );

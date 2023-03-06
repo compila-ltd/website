@@ -51,14 +51,23 @@ export const Footer = () => (
   <footer className="mt-12 border-t border-transparent-white py-[5.6rem] text-sm">
     <Container className="flex flex-col justify-between">
       <div>
-        <div className="flex h-full flex-row justify-between">
+        <div className="flex h-full flex-row items-start justify-between">
           <div className="flex items-center text-grey">
             <Logo className="mr-4 h-4 w-4" /> Compila
           </div>
-          <div className="mt-auto flex space-x-4 text-grey">
-            <TwitterIcon />
-            <GithubIcon />
-            <SlackIcon />
+          <div className="flex flex-col items-end gap-2">
+            <a
+              href="mailto:contact@compila.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              contact@compila.com
+            </a>
+            <div className="mt-auto flex space-x-4 text-grey">
+              <TwitterIcon />
+              <GithubIcon />
+              <SlackIcon />
+            </div>
           </div>
         </div>
       </div>
