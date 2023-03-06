@@ -19,7 +19,7 @@ Para comenzar a desarrollar en este proyecto, puedes seguir los siguientes pasos
 1. Clonar el repositorio de GitHub:
 
 ```bash
-    git clone https://github.com/username/compila.git
+    git clone https://github.com/qvacode/compila-website.git
 ```
 
 2. Instalar las dependencias del proyecto:
@@ -36,6 +36,9 @@ Para comenzar a desarrollar en este proyecto, puedes seguir los siguientes pasos
 ```
 
 4. Abre el sitio web en tu navegador en http://localhost:3000.
+
+### Sitio en producción
+[https://compila.com](https://6406617fd7d23502eef4ba58--glittering-dasik-9a08e1.netlify.app/)
 
 ### Licencia
 
