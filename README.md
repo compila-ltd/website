@@ -1,28 +1,42 @@
-# Rebuilding Linear.app's homepage with Next.js and Tailwind
+# Compila
 
-**NOTE:** I am NOT affiliated with [Linear.app](https://linear.app/), but just really like their website, and think rebuilding this with Tailwind can teach a lot to people. All of the images in `/public/img` are owned by Linear, they are only used as teaching material here.
+Este es el sitio web oficial de Compila, una startup cubana dedicada al desarrollo de aplicaciones web y móviles. El sitio está construido utilizando Next.js y Tailwind CSS.
 
-## Work in progress 🚧
+## Scripts
 
-This version is the end result of the first video. Any next part will also be committed in main, and extend this current version.
+En el archivo package.json, encontrarás los siguientes scripts disponibles para correr en el proyecto:
 
-## See what we build so far
+```bash
+    'dev': #Arranca un servidor de desarrollo.
+    'build': #Construye la aplicación para producción.
+    'start': #Arranca el servidor de producción.
+```
 
-[Visit the preview of what we build here.](https://rebuilding-linear.vercel.app/)
+### Desarrollo
 
-## Video links 📺
+Para comenzar a desarrollar en este proyecto, puedes seguir los siguientes pasos:
 
-* [Part One](https://youtu.be/ls_b-1a0ZUc): Setting up the project, building the header, main navigation, part of the hero component and the footer.
-* [Part Two](https://youtu.be/R5PjNcIdAzU): Building the super detailed animated hero on the homepage.
-* [Part Three](https://youtu.be/ar_NCPlRt_U): Building the client logo's and USP section.
-* [Part Four](https://youtu.be/RoQ0MXiWQoY): Building the interactive shortcuts keyboard.
-* [Part Five](https://youtu.be/lRtiKHy5Db8): Building the command menu.
-* [Part Six](https://youtu.be/21kgdgWiNDs): Building feature blocks with awesome gradients.
+1. Clonar el repositorio de GitHub:
 
-## Running this project
+```bash
+    git clone https://github.com/username/compila.git
+```
 
-Run `yarn` or `npm i` to install the project. Next run `yarn dev` or `npm run dev` to view the project by clicking the link in the terminal.
+2. Instalar las dependencias del proyecto:
 
-## Design remains copyrighted by Linear, it can only be used for educational purposes.
+```bash
+    cd compila
+    npm install
+```
 
-See the [LICENSE](/LICENSE.md) for more information about reusing this code.
+3. Correr el servidor de desarrollo:
+
+```bash
+    yarn dev
+```
+
+4. Abre el sitio web en tu navegador en http://localhost:3000.
+
+### Licencia
+
+> Este proyecto está bajo la licencia MIT. Puedes ver más información en el archivo LICENSE.md
